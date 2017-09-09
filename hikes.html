@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_9132e5ed94b8443dbb43df8105acaa86 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9132e5ed94b8443dbb43df8105acaa86" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_9132e5ed94b8443dbb43df8105acaa86 = L.map(
+                                  'map_9132e5ed94b8443dbb43df8105acaa86',
+                                  {center: [37.8716,-122.2727],
+                                  zoom: 9,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            L.control.scale().addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+        
+    
+            var tile_layer_c7f8a77bc57549f59e18ff79a482ee3b = L.tileLayer(
+                'http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'USGS style',
+                    detectRetina: false
+                    }
+                ).addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+
+        
+    
+
+            var marker_af6dae447c33467fa37f35a706f1b6e6 = L.marker(
+                [37.958893,-121.850332],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_1129c47e4d5c467d904d1dd3bd950d5e = L.popup({maxWidth: '300'});
+
+            
+                var html_61998b6fef7a4031a74c70ad9421673d = $('<div id="html_61998b6fef7a4031a74c70ad9421673d" style="width: 100.0%; height: 100.0%;">Black Diamond Mines Regional Preserve</div>')[0];
+                popup_1129c47e4d5c467d904d1dd3bd950d5e.setContent(html_61998b6fef7a4031a74c70ad9421673d);
+            
+
+            marker_af6dae447c33467fa37f35a706f1b6e6.bindPopup(popup_1129c47e4d5c467d904d1dd3bd950d5e);
+
+            
+        
+    
+
+            var marker_1fb220a86ab14158a0df8cc0d322797d = L.marker(
+                [37.893089,-122.607722],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_9bffa9ce4b974d8c8e91782bbbc567f1 = L.popup({maxWidth: '300'});
+
+            
+                var html_b946a07b5b2e47de97cd149c41a07a2d = $('<div id="html_b946a07b5b2e47de97cd149c41a07a2d" style="width: 100.0%; height: 100.0%;">Mt Tamalpais State Park</div>')[0];
+                popup_9bffa9ce4b974d8c8e91782bbbc567f1.setContent(html_b946a07b5b2e47de97cd149c41a07a2d);
+            
+
+            marker_1fb220a86ab14158a0df8cc0d322797d.bindPopup(popup_9bffa9ce4b974d8c8e91782bbbc567f1);
+
+            
+        
+    
+
+            var marker_f6d3e9e03c724882860aedad507987a0 = L.marker(
+                [37.806305,-122.451806],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_d4908f9e19f8437c822ef69f4c49f580 = L.popup({maxWidth: '300'});
+
+            
+                var html_cd7d4a55d0fb4fe886220ee7e9499bfc = $('<div id="html_cd7d4a55d0fb4fe886220ee7e9499bfc" style="width: 100.0%; height: 100.0%;">Crissy Field East Beach</div>')[0];
+                popup_d4908f9e19f8437c822ef69f4c49f580.setContent(html_cd7d4a55d0fb4fe886220ee7e9499bfc);
+            
+
+            marker_f6d3e9e03c724882860aedad507987a0.bindPopup(popup_d4908f9e19f8437c822ef69f4c49f580);
+
+            
+        
+    
+
+            var marker_fb9a8952928e477caf52c4357f0383cf = L.marker(
+                [37.900128,-122.325097],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_d36702595b4c4f16a268f801aec45000 = L.popup({maxWidth: '300'});
+
+            
+                var html_da5d001f79b14f2c83b8bc2cd9d1de16 = $('<div id="html_da5d001f79b14f2c83b8bc2cd9d1de16" style="width: 100.0%; height: 100.0%;">Point Isabel Regional Shoreline</div>')[0];
+                popup_d36702595b4c4f16a268f801aec45000.setContent(html_da5d001f79b14f2c83b8bc2cd9d1de16);
+            
+
+            marker_fb9a8952928e477caf52c4357f0383cf.bindPopup(popup_d36702595b4c4f16a268f801aec45000);
+
+            
+        
+    
+
+            var marker_03de46b450e84af58d28f254e1e6eed9 = L.marker(
+                [37.880013,-122.148731],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_beead43457fe46fab1b5e4e24a51af11 = L.popup({maxWidth: '300'});
+
+            
+                var html_97abe45c52f14f6a9e11f95738aadf74 = $('<div id="html_97abe45c52f14f6a9e11f95738aadf74" style="width: 100.0%; height: 100.0%;">Lafayette Reservoir Recreation Area</div>')[0];
+                popup_beead43457fe46fab1b5e4e24a51af11.setContent(html_97abe45c52f14f6a9e11f95738aadf74);
+            
+
+            marker_03de46b450e84af58d28f254e1e6eed9.bindPopup(popup_beead43457fe46fab1b5e4e24a51af11);
+
+            
+        
+    
+
+            var marker_6edc2d65e5da4147921ca5845b8a9f47 = L.marker(
+                [37.916274,-122.382712],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_3f704270bfd4481c9058080d85d54cba = L.popup({maxWidth: '300'});
+
+            
+                var html_0c12aaa38a774beca4c28e4a7bda897c = $('<div id="html_0c12aaa38a774beca4c28e4a7bda897c" style="width: 100.0%; height: 100.0%;">Miller/Knox Regional Shoreline</div>')[0];
+                popup_3f704270bfd4481c9058080d85d54cba.setContent(html_0c12aaa38a774beca4c28e4a7bda897c);
+            
+
+            marker_6edc2d65e5da4147921ca5845b8a9f47.bindPopup(popup_3f704270bfd4481c9058080d85d54cba);
+
+            
+        
+    
+
+            var marker_5ea6b340d31b4c0d95af2831af7bb912 = L.marker(
+                [40.495837,-121.413332],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_7e09ff9f648c4c0a8e8c23f8c9151ec2 = L.popup({maxWidth: '300'});
+
+            
+                var html_1ed15f695cf844e9b6df5c65e366358f = $('<div id="html_1ed15f695cf844e9b6df5c65e366358f" style="width: 100.0%; height: 100.0%;">Lassen Volcanic National Park</div>')[0];
+                popup_7e09ff9f648c4c0a8e8c23f8c9151ec2.setContent(html_1ed15f695cf844e9b6df5c65e366358f);
+            
+
+            marker_5ea6b340d31b4c0d95af2831af7bb912.bindPopup(popup_7e09ff9f648c4c0a8e8c23f8c9151ec2);
+
+            
+        
+    
+
+            var marker_b805c723c1924d4b826f37a4ace78ce3 = L.marker(
+                [39.045062,-122.805719],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_9eb88a916b394a99b29306c57091f235 = L.popup({maxWidth: '300'});
+
+            
+                var html_7c5244e6fccd48e29bc1017af8177b5e = $('<div id="html_7c5244e6fccd48e29bc1017af8177b5e" style="width: 100.0%; height: 100.0%;">Clear Lake</div>')[0];
+                popup_9eb88a916b394a99b29306c57091f235.setContent(html_7c5244e6fccd48e29bc1017af8177b5e);
+            
+
+            marker_b805c723c1924d4b826f37a4ace78ce3.bindPopup(popup_9eb88a916b394a99b29306c57091f235);
+
+            
+        
+    
+
+            var marker_0df27e4e87ed40e38250dafde7d562a8 = L.marker(
+                [37.859397,-122.298853],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_68d32ae529854b33bcb79e90bb8b161b = L.popup({maxWidth: '300'});
+
+            
+                var html_06d2224ffded4b418f35d1fbd2509253 = $('<div id="html_06d2224ffded4b418f35d1fbd2509253" style="width: 100.0%; height: 100.0%;">Berkeley Aquatic Park</div>')[0];
+                popup_68d32ae529854b33bcb79e90bb8b161b.setContent(html_06d2224ffded4b418f35d1fbd2509253);
+            
+
+            marker_0df27e4e87ed40e38250dafde7d562a8.bindPopup(popup_68d32ae529854b33bcb79e90bb8b161b);
+
+            
+        
+    
+
+            var marker_f6b1187aeb534fe283102a49a9700f26 = L.marker(
+                [38.240202,-122.994878],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_32bcab2799b2483bb2fa320dfc5606ad = L.popup({maxWidth: '300'});
+
+            
+                var html_0356d6e79edd4089ab27a7a9d3a1b965 = $('<div id="html_0356d6e79edd4089ab27a7a9d3a1b965" style="width: 100.0%; height: 100.0%;">Tomales Point</div>')[0];
+                popup_32bcab2799b2483bb2fa320dfc5606ad.setContent(html_0356d6e79edd4089ab27a7a9d3a1b965);
+            
+
+            marker_f6b1187aeb534fe283102a49a9700f26.bindPopup(popup_32bcab2799b2483bb2fa320dfc5606ad);
+
+            
+        
+    
+
+            var marker_ab0c149ff8f54916a1405216dd88cc37 = L.marker(
+                [36.625783,-121.939529],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_e15c1ffb20be41ed9b8e84da80add561 = L.popup({maxWidth: '300'});
+
+            
+                var html_f2b476b0bc9844d7a281e9517bb86a01 = $('<div id="html_f2b476b0bc9844d7a281e9517bb86a01" style="width: 100.0%; height: 100.0%;">Asilomar State Beach</div>')[0];
+                popup_e15c1ffb20be41ed9b8e84da80add561.setContent(html_f2b476b0bc9844d7a281e9517bb86a01);
+            
+
+            marker_ab0c149ff8f54916a1405216dd88cc37.bindPopup(popup_e15c1ffb20be41ed9b8e84da80add561);
+
+            
+        
+    
+
+            var marker_884ca259a2074688825e0085ff878e57 = L.marker(
+                [37.642596,-121.924793],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_d5d245d3ffff41d4834235ce685d58c6 = L.popup({maxWidth: '300'});
+
+            
+                var html_f0584bea6a58436284a041c770c16fe6 = $('<div id="html_f0584bea6a58436284a041c770c16fe6" style="width: 100.0%; height: 100.0%;">Augustin Bernal Park</div>')[0];
+                popup_d5d245d3ffff41d4834235ce685d58c6.setContent(html_f0584bea6a58436284a041c770c16fe6);
+            
+
+            marker_884ca259a2074688825e0085ff878e57.bindPopup(popup_d5d245d3ffff41d4834235ce685d58c6);
+
+            
+        
+    
+
+            var marker_41186559d8fe439eaacccd09f5ff7d88 = L.marker(
+                [37.814325,-122.165124],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_d79c876e3b9a4cb582e2deeb15a7ea43 = L.popup({maxWidth: '300'});
+
+            
+                var html_79b7757971964fbbb9fb2257fbcddf42 = $('<div id="html_79b7757971964fbbb9fb2257fbcddf42" style="width: 100.0%; height: 100.0%;">Redwood Regional Park</div>')[0];
+                popup_d79c876e3b9a4cb582e2deeb15a7ea43.setContent(html_79b7757971964fbbb9fb2257fbcddf42);
+            
+
+            marker_41186559d8fe439eaacccd09f5ff7d88.bindPopup(popup_d79c876e3b9a4cb582e2deeb15a7ea43);
+
+            
+        
+    
+
+            var marker_1335a6d5e32840bb9126cafc58be58ae = L.marker(
+                [37.873887,-121.930986],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_1f03e4ab0fec4936b6b04609f02be965 = L.popup({maxWidth: '300'});
+
+            
+                var html_2f78b660f0f64bc993df7496e6ec55b2 = $('<div id="html_2f78b660f0f64bc993df7496e6ec55b2" style="width: 100.0%; height: 100.0%;">Mt Diablo</div>')[0];
+                popup_1f03e4ab0fec4936b6b04609f02be965.setContent(html_2f78b660f0f64bc993df7496e6ec55b2);
+            
+
+            marker_1335a6d5e32840bb9126cafc58be58ae.bindPopup(popup_1f03e4ab0fec4936b6b04609f02be965);
+
+            
+        
+    
+
+            var marker_30f14370dd24472b99c1a5b57acf19e4 = L.marker(
+                [37.823291,-122.044897],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_63b29418128a4a518c092d8ca2bfaab4 = L.popup({maxWidth: '300'});
+
+            
+                var html_19e64e6ba72c4a2c92df942c7e1a253a = $('<div id="html_19e64e6ba72c4a2c92df942c7e1a253a" style="width: 100.0%; height: 100.0%;">Las Trampas Regional Wilderness</div>')[0];
+                popup_63b29418128a4a518c092d8ca2bfaab4.setContent(html_19e64e6ba72c4a2c92df942c7e1a253a);
+            
+
+            marker_30f14370dd24472b99c1a5b57acf19e4.bindPopup(popup_63b29418128a4a518c092d8ca2bfaab4);
+
+            
+        
+    
+
+            var marker_3a5bc6fcb9564fbab0524c103b06010b = L.marker(
+                [38.706135,-120.082854],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_6c2732377cc24b3796fefd9a82b86f49 = L.popup({maxWidth: '300'});
+
+            
+                var html_c98a510c7d3242efb879d063683bb8e2 = $('<div id="html_c98a510c7d3242efb879d063683bb8e2" style="width: 100.0%; height: 100.0%;">Kirkwood Lake</div>')[0];
+                popup_6c2732377cc24b3796fefd9a82b86f49.setContent(html_c98a510c7d3242efb879d063683bb8e2);
+            
+
+            marker_3a5bc6fcb9564fbab0524c103b06010b.bindPopup(popup_6c2732377cc24b3796fefd9a82b86f49);
+
+            
+        
+    
+
+            var marker_9dcc31f020fd450097ba3e860f48a953 = L.marker(
+                [37.768604,-122.481812],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_fc51ee16116a42bc9acdd372db49e795 = L.popup({maxWidth: '300'});
+
+            
+                var html_4a690a7e6c3a44ca838da599d4023fd8 = $('<div id="html_4a690a7e6c3a44ca838da599d4023fd8" style="width: 100.0%; height: 100.0%;">Golden Gate Park</div>')[0];
+                popup_fc51ee16116a42bc9acdd372db49e795.setContent(html_4a690a7e6c3a44ca838da599d4023fd8);
+            
+
+            marker_9dcc31f020fd450097ba3e860f48a953.bindPopup(popup_fc51ee16116a42bc9acdd372db49e795);
+
+            
+        
+    
+
+            var marker_abf539548e334b5c8015399665fe3781 = L.marker(
+                [40.228391,-121.187468],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_9cb5182de42646b2b3c900f6751f5d47 = L.popup({maxWidth: '300'});
+
+            
+                var html_52b37ce3f69f418c88e7064672d33f03 = $('<div id="html_52b37ce3f69f418c88e7064672d33f03" style="width: 100.0%; height: 100.0%;">Lake Almanor</div>')[0];
+                popup_9cb5182de42646b2b3c900f6751f5d47.setContent(html_52b37ce3f69f418c88e7064672d33f03);
+            
+
+            marker_abf539548e334b5c8015399665fe3781.bindPopup(popup_9cb5182de42646b2b3c900f6751f5d47);
+
+            
+        
+    
+
+            var marker_e0c0d03346314209a658918ab39019a7 = L.marker(
+                [37.997885,-123.019936],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_b3a44c22421442d89c84f4947327b9b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_b3fed42f30264c84add7ece20c0060fc = $('<div id="html_b3fed42f30264c84add7ece20c0060fc" style="width: 100.0%; height: 100.0%;">The Point Reyes Lighthouse</div>')[0];
+                popup_b3a44c22421442d89c84f4947327b9b0.setContent(html_b3fed42f30264c84add7ece20c0060fc);
+            
+
+            marker_e0c0d03346314209a658918ab39019a7.bindPopup(popup_b3a44c22421442d89c84f4947327b9b0);
+
+            
+        
+    
+
+            var marker_a8596c4900884a5291838e707d9e8b89 = L.marker(
+                [37.990754,-122.965959],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_746e0225433f44fabe9f24239eed3bed = L.popup({maxWidth: '300'});
+
+            
+                var html_858ee24d4ab8430abf73b60e26cf7cd4 = $('<div id="html_858ee24d4ab8430abf73b60e26cf7cd4" style="width: 100.0%; height: 100.0%;">Chimney Rock</div>')[0];
+                popup_746e0225433f44fabe9f24239eed3bed.setContent(html_858ee24d4ab8430abf73b60e26cf7cd4);
+            
+
+            marker_a8596c4900884a5291838e707d9e8b89.bindPopup(popup_746e0225433f44fabe9f24239eed3bed);
+
+            
+        
+    
+
+            var marker_127c897c3a5c43bbabcdc4f042150598 = L.marker(
+                [37.807337,-122.258512],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_5ede78f72abf4289b884cc9e39046532 = L.popup({maxWidth: '300'});
+
+            
+                var html_b39c48e60cf345a99efabbf4c23b46ff = $('<div id="html_b39c48e60cf345a99efabbf4c23b46ff" style="width: 100.0%; height: 100.0%;">Lakeside Park</div>')[0];
+                popup_5ede78f72abf4289b884cc9e39046532.setContent(html_b39c48e60cf345a99efabbf4c23b46ff);
+            
+
+            marker_127c897c3a5c43bbabcdc4f042150598.bindPopup(popup_5ede78f72abf4289b884cc9e39046532);
+
+            
+        
+    
+
+            var marker_b64407a0a4614e4d9fe9ca0d38ec0ee8 = L.marker(
+                [37.914906,-122.347138],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_db7eb0172cb24617a63a2c19a9f2aa6e = L.popup({maxWidth: '300'});
+
+            
+                var html_2f24289fc2d44b0fb6c514e61e1c35d4 = $('<div id="html_2f24289fc2d44b0fb6c514e61e1c35d4" style="width: 100.0%; height: 100.0%;">Marina Park</div>')[0];
+                popup_db7eb0172cb24617a63a2c19a9f2aa6e.setContent(html_2f24289fc2d44b0fb6c514e61e1c35d4);
+            
+
+            marker_b64407a0a4614e4d9fe9ca0d38ec0ee8.bindPopup(popup_db7eb0172cb24617a63a2c19a9f2aa6e);
+
+            
+        
+    
+
+            var marker_dd0b5007a63544ab94f826ecf88a514c = L.marker(
+                [38.025524,-122.883647],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_041a0c7bad774f7a9d9653221d319e5a = L.popup({maxWidth: '300'});
+
+            
+                var html_600782f9fdfb4066add07b98bf33e453 = $('<div id="html_600782f9fdfb4066add07b98bf33e453" style="width: 100.0%; height: 100.0%;">Limantour Beach</div>')[0];
+                popup_041a0c7bad774f7a9d9653221d319e5a.setContent(html_600782f9fdfb4066add07b98bf33e453);
+            
+
+            marker_dd0b5007a63544ab94f826ecf88a514c.bindPopup(popup_041a0c7bad774f7a9d9653221d319e5a);
+
+            
+        
+    
+
+            var marker_fdd6b6bbeefa4a97b8f7cf7245240071 = L.marker(
+                [37.767659,-122.512278],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_c18720b7788e4780b55d416e3f9d28ed = L.popup({maxWidth: '300'});
+
+            
+                var html_90af7a98340044638de76d24ec09f853 = $('<div id="html_90af7a98340044638de76d24ec09f853" style="width: 100.0%; height: 100.0%;">Ocean Beach</div>')[0];
+                popup_c18720b7788e4780b55d416e3f9d28ed.setContent(html_90af7a98340044638de76d24ec09f853);
+            
+
+            marker_fdd6b6bbeefa4a97b8f7cf7245240071.bindPopup(popup_c18720b7788e4780b55d416e3f9d28ed);
+
+            
+        
+    
+
+            var marker_9bdcd878949947a28e76d09d57bfcdca = L.marker(
+                [37.767123,-122.274524],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_bdfec8615c554add94839c8c6155c1d9 = L.popup({maxWidth: '300'});
+
+            
+                var html_f0608728d9d245e082b4692150419dbb = $('<div id="html_f0608728d9d245e082b4692150419dbb" style="width: 100.0%; height: 100.0%;">Robert W. Crown Memorial State Beach</div>')[0];
+                popup_bdfec8615c554add94839c8c6155c1d9.setContent(html_f0608728d9d245e082b4692150419dbb);
+            
+
+            marker_9bdcd878949947a28e76d09d57bfcdca.bindPopup(popup_bdfec8615c554add94839c8c6155c1d9);
+
+            
+        
+    
+
+            var marker_13df955081094637a9f9c179bbd649a0 = L.marker(
+                [37.937948,-122.139664],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_256a42da81bf4be2bb084e1283548726 = L.popup({maxWidth: '300'});
+
+            
+                var html_bc97e399bcef499dbf0f1be8a6945156 = $('<div id="html_bc97e399bcef499dbf0f1be8a6945156" style="width: 100.0%; height: 100.0%;">Briones Regional Park</div>')[0];
+                popup_256a42da81bf4be2bb084e1283548726.setContent(html_bc97e399bcef499dbf0f1be8a6945156);
+            
+
+            marker_13df955081094637a9f9c179bbd649a0.bindPopup(popup_256a42da81bf4be2bb084e1283548726);
+
+            
+        
+    
+
+            var marker_8c6785e112974324ba22246c5810366e = L.marker(
+                [37.741716,-119.598425],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_da8408bc386649ca896d98bbd32c0ddb = L.popup({maxWidth: '300'});
+
+            
+                var html_062689c415a9427ebaa3b097055c959f = $('<div id="html_062689c415a9427ebaa3b097055c959f" style="width: 100.0%; height: 100.0%;">Yosemite Valley</div>')[0];
+                popup_da8408bc386649ca896d98bbd32c0ddb.setContent(html_062689c415a9427ebaa3b097055c959f);
+            
+
+            marker_8c6785e112974324ba22246c5810366e.bindPopup(popup_da8408bc386649ca896d98bbd32c0ddb);
+
+            
+        
+    
+
+            var marker_5827a3efa94c45baa0f48016a0491b5f = L.marker(
+                [36.371433,-121.901703],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_b25c413e336b44a196bbe4abc15a2b6b = L.popup({maxWidth: '300'});
+
+            
+                var html_4abb5783537246449e4ae332fda46cde = $('<div id="html_4abb5783537246449e4ae332fda46cde" style="width: 100.0%; height: 100.0%;">Bixby Creek Bridge</div>')[0];
+                popup_b25c413e336b44a196bbe4abc15a2b6b.setContent(html_4abb5783537246449e4ae332fda46cde);
+            
+
+            marker_5827a3efa94c45baa0f48016a0491b5f.bindPopup(popup_b25c413e336b44a196bbe4abc15a2b6b);
+
+            
+        
+    
+
+            var marker_d65c9449a8834d378558c7b101488975 = L.marker(
+                [37.841614,-122.551562],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_f8b2074483374294a11ba504bc4e9f4a = L.popup({maxWidth: '300'});
+
+            
+                var html_f85f524513484bf3b1b44ca30fa0208b = $('<div id="html_f85f524513484bf3b1b44ca30fa0208b" style="width: 100.0%; height: 100.0%;">Tennessee Valley Beach</div>')[0];
+                popup_f8b2074483374294a11ba504bc4e9f4a.setContent(html_f85f524513484bf3b1b44ca30fa0208b);
+            
+
+            marker_d65c9449a8834d378558c7b101488975.bindPopup(popup_f8b2074483374294a11ba504bc4e9f4a);
+
+            
+        
+    
+
+            var marker_061fd39a41264a9cbe40b43feaa76877 = L.marker(
+                [37.938034,-122.291631],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_d01d2aea00a547749140be454736826b = L.popup({maxWidth: '300'});
+
+            
+                var html_80dd89d1a9c1410182f79e6299111c99 = $('<div id="html_80dd89d1a9c1410182f79e6299111c99" style="width: 100.0%; height: 100.0%;">Wildcat Canyon Regional Park</div>')[0];
+                popup_d01d2aea00a547749140be454736826b.setContent(html_80dd89d1a9c1410182f79e6299111c99);
+            
+
+            marker_061fd39a41264a9cbe40b43feaa76877.bindPopup(popup_d01d2aea00a547749140be454736826b);
+
+            
+        
+    
+
+            var marker_0def137dff924a11b36b9e8f5d5f8ff9 = L.marker(
+                [38.026804,-122.963041],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_f15f88e7c14549cb929159cf3da2e8e8 = L.popup({maxWidth: '300'});
+
+            
+                var html_b7cb52f73f204bf1b24eecc8f2c806b7 = $('<div id="html_b7cb52f73f204bf1b24eecc8f2c806b7" style="width: 100.0%; height: 100.0%;">Drakes Beach</div>')[0];
+                popup_f15f88e7c14549cb929159cf3da2e8e8.setContent(html_b7cb52f73f204bf1b24eecc8f2c806b7);
+            
+
+            marker_0def137dff924a11b36b9e8f5d5f8ff9.bindPopup(popup_f15f88e7c14549cb929159cf3da2e8e8);
+
+            
+        
+    
+
+            var marker_e07d0ed0b8bf40d1a77a759654e2f2ff = L.marker(
+                [41.676373,-124.113762],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_506fa8dd0cc64404a40a7ef710380472 = L.popup({maxWidth: '300'});
+
+            
+                var html_cefe03f74a8d4c5e913332158b698346 = $('<div id="html_cefe03f74a8d4c5e913332158b698346" style="width: 100.0%; height: 100.0%;">Del Norte Coast Redwoods State Park</div>')[0];
+                popup_506fa8dd0cc64404a40a7ef710380472.setContent(html_cefe03f74a8d4c5e913332158b698346);
+            
+
+            marker_e07d0ed0b8bf40d1a77a759654e2f2ff.bindPopup(popup_506fa8dd0cc64404a40a7ef710380472);
+
+            
+        
+    
+
+            var marker_6b857e6612a447aabdcd2f95fa44dee8 = L.marker(
+                [37.859592,-122.484828],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_723a974080814defa07c6ae295375fc1 = L.popup({maxWidth: '300'});
+
+            
+                var html_c6081d6d4bd84875a18006beded8c244 = $('<div id="html_c6081d6d4bd84875a18006beded8c244" style="width: 100.0%; height: 100.0%;">Sausalito</div>')[0];
+                popup_723a974080814defa07c6ae295375fc1.setContent(html_c6081d6d4bd84875a18006beded8c244);
+            
+
+            marker_6b857e6612a447aabdcd2f95fa44dee8.bindPopup(popup_723a974080814defa07c6ae295375fc1);
+
+            
+        
+    
+
+            var marker_408c66d42c904f1b9d296025d82ac2a1 = L.marker(
+                [37.80359,-122.25832],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_5e10099edfa34fbc9d14cbff8364760b = L.popup({maxWidth: '300'});
+
+            
+                var html_54cecbe501a94b198ea72ff2c3581630 = $('<div id="html_54cecbe501a94b198ea72ff2c3581630" style="width: 100.0%; height: 100.0%;">Lake Merritt</div>')[0];
+                popup_5e10099edfa34fbc9d14cbff8364760b.setContent(html_54cecbe501a94b198ea72ff2c3581630);
+            
+
+            marker_408c66d42c904f1b9d296025d82ac2a1.bindPopup(popup_5e10099edfa34fbc9d14cbff8364760b);
+
+            
+        
+    
+
+            var marker_7567533b0bf44b5a9c5266aa4787c262 = L.marker(
+                [36.964714,-122.018901],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_3c3a87f1ab8343319db59c890d1ec1bf = L.popup({maxWidth: '300'});
+
+            
+                var html_3b26033c7e784120bc51f41a3f430e83 = $('<div id="html_3b26033c7e784120bc51f41a3f430e83" style="width: 100.0%; height: 100.0%;">Santa Cruz Beach Boardwalk</div>')[0];
+                popup_3c3a87f1ab8343319db59c890d1ec1bf.setContent(html_3b26033c7e784120bc51f41a3f430e83);
+            
+
+            marker_7567533b0bf44b5a9c5266aa4787c262.bindPopup(popup_3c3a87f1ab8343319db59c890d1ec1bf);
+
+            
+        
+    
+
+            var marker_5b893f59265f4439aad66d31e60b1b67 = L.marker(
+                [37.92389,-122.389027],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_b6a86cf470f447ccb165144995f80232 = L.popup({maxWidth: '300'});
+
+            
+                var html_50a1f795e18849f2b503ef4662f97fe4 = $('<div id="html_50a1f795e18849f2b503ef4662f97fe4" style="width: 100.0%; height: 100.0%;">Point Richmond</div>')[0];
+                popup_b6a86cf470f447ccb165144995f80232.setContent(html_50a1f795e18849f2b503ef4662f97fe4);
+            
+
+            marker_5b893f59265f4439aad66d31e60b1b67.bindPopup(popup_b6a86cf470f447ccb165144995f80232);
+
+            
+        
+    
+
+            var marker_695a2d40ba1c4651868adadc4ddaa0a1 = L.marker(
+                [37.899569,-122.645816],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_444c06170b2e43f39435d1f65b2d441d = L.popup({maxWidth: '300'});
+
+            
+                var html_3b912dd8b7944b0088fa03664415ec6f = $('<div id="html_3b912dd8b7944b0088fa03664415ec6f" style="width: 100.0%; height: 100.0%;">Stinson Beach</div>')[0];
+                popup_444c06170b2e43f39435d1f65b2d441d.setContent(html_3b912dd8b7944b0088fa03664415ec6f);
+            
+
+            marker_695a2d40ba1c4651868adadc4ddaa0a1.bindPopup(popup_444c06170b2e43f39435d1f65b2d441d);
+
+            
+        
+    
+
+            var marker_c635c137d16e4f10942fc5214dbd131d = L.marker(
+                [37.532551,-121.707314],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_f4606b8f2f8d462281b299aced26f714 = L.popup({maxWidth: '300'});
+
+            
+                var html_da95742f2a7241aba49a17368fbd9b7c = $('<div id="html_da95742f2a7241aba49a17368fbd9b7c" style="width: 100.0%; height: 100.0%;">Ohlone Regional Wilderness</div>')[0];
+                popup_f4606b8f2f8d462281b299aced26f714.setContent(html_da95742f2a7241aba49a17368fbd9b7c);
+            
+
+            marker_c635c137d16e4f10942fc5214dbd131d.bindPopup(popup_f4606b8f2f8d462281b299aced26f714);
+
+            
+        
+    
+
+            var marker_380a62a1ba9f4355a55f0238a9bf5598 = L.marker(
+                [37.98848,-122.81238],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_5f0fc5dbc46e4d978effae4d1aba83e3 = L.popup({maxWidth: '300'});
+
+            
+                var html_5dbd6abae798467baa5084e2dfed7a19 = $('<div id="html_5dbd6abae798467baa5084e2dfed7a19" style="width: 100.0%; height: 100.0%;">Bear Valley</div>')[0];
+                popup_5f0fc5dbc46e4d978effae4d1aba83e3.setContent(html_5dbd6abae798467baa5084e2dfed7a19);
+            
+
+            marker_380a62a1ba9f4355a55f0238a9bf5598.bindPopup(popup_5f0fc5dbc46e4d978effae4d1aba83e3);
+
+            
+        
+    
+
+            var marker_37349d8ef04a4cd4b3c77d563fa6970e = L.marker(
+                [37.46781,-122.446389],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_a286a0e4738644458a8fbb8d53c8f931 = L.popup({maxWidth: '300'});
+
+            
+                var html_096932f5bb7a45a1addfb302a0d5de95 = $('<div id="html_096932f5bb7a45a1addfb302a0d5de95" style="width: 100.0%; height: 100.0%;">Half Moon Bay State Beach</div>')[0];
+                popup_a286a0e4738644458a8fbb8d53c8f931.setContent(html_096932f5bb7a45a1addfb302a0d5de95);
+            
+
+            marker_37349d8ef04a4cd4b3c77d563fa6970e.bindPopup(popup_a286a0e4738644458a8fbb8d53c8f931);
+
+            
+        
+    
+
+            var marker_79072bda3ed74e108f0f33fa16de987b = L.marker(
+                [38.297754,-122.283994],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_0534b739ab134dc2b58f7332301423bd = L.popup({maxWidth: '300'});
+
+            
+                var html_350f82b8e67349bd9a15669509b84ea8 = $('<div id="html_350f82b8e67349bd9a15669509b84ea8" style="width: 100.0%; height: 100.0%;">Napa</div>')[0];
+                popup_0534b739ab134dc2b58f7332301423bd.setContent(html_350f82b8e67349bd9a15669509b84ea8);
+            
+
+            marker_79072bda3ed74e108f0f33fa16de987b.bindPopup(popup_0534b739ab134dc2b58f7332301423bd);
+
+            
+        
+    
+
+            var marker_452f12f4aa054e9a805e9332a24cff4b = L.marker(
+                [36.554579,-121.93031],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_7489d90190aa475ba94cb294854c71aa = L.popup({maxWidth: '300'});
+
+            
+                var html_152c89c822764a6e8efbe5881acc3e34 = $('<div id="html_152c89c822764a6e8efbe5881acc3e34" style="width: 100.0%; height: 100.0%;">Carmel Beach</div>')[0];
+                popup_7489d90190aa475ba94cb294854c71aa.setContent(html_152c89c822764a6e8efbe5881acc3e34);
+            
+
+            marker_452f12f4aa054e9a805e9332a24cff4b.bindPopup(popup_7489d90190aa475ba94cb294854c71aa);
+
+            
+        
+    
+
+            var marker_19c047f8e2c442b2a5257e1ae46e07d0 = L.marker(
+                [37.895066,-122.245665],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_62a6e416d54048ab9414d7c6390f2d67 = L.popup({maxWidth: '300'});
+
+            
+                var html_4254ff86639547babe6815e92a1295da = $('<div id="html_4254ff86639547babe6815e92a1295da" style="width: 100.0%; height: 100.0%;">Tilden Regional Park</div>')[0];
+                popup_62a6e416d54048ab9414d7c6390f2d67.setContent(html_4254ff86639547babe6815e92a1295da);
+            
+
+            marker_19c047f8e2c442b2a5257e1ae46e07d0.bindPopup(popup_62a6e416d54048ab9414d7c6390f2d67);
+
+            
+        
+    
+
+            var marker_c47fcc9a16ad410a92f72546fd317a2a = L.marker(
+                [38.013999,-122.151934],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_eb3128cf4d4844129805c62c561ac703 = L.popup({maxWidth: '300'});
+
+            
+                var html_9e5ddc6f733742969004ea7af862d9aa = $('<div id="html_9e5ddc6f733742969004ea7af862d9aa" style="width: 100.0%; height: 100.0%;">Carquinez Strait Regional Shoreline</div>')[0];
+                popup_eb3128cf4d4844129805c62c561ac703.setContent(html_9e5ddc6f733742969004ea7af862d9aa);
+            
+
+            marker_c47fcc9a16ad410a92f72546fd317a2a.bindPopup(popup_eb3128cf4d4844129805c62c561ac703);
+
+            
+        
+    
+
+            var marker_532fb33d66854c5e96b3bdca548ed7cc = L.marker(
+                [41.215701,-124.018844],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_9666cb5cd7174cffbd8df07deae93ae5 = L.popup({maxWidth: '300'});
+
+            
+                var html_11d59a8d14a84d5daa872497a77528da = $('<div id="html_11d59a8d14a84d5daa872497a77528da" style="width: 100.0%; height: 100.0%;">Redwood National and State Parks</div>')[0];
+                popup_9666cb5cd7174cffbd8df07deae93ae5.setContent(html_11d59a8d14a84d5daa872497a77528da);
+            
+
+            marker_532fb33d66854c5e96b3bdca548ed7cc.bindPopup(popup_9666cb5cd7174cffbd8df07deae93ae5);
+
+            
+        
+    
+
+            var marker_59fe77c27a1c4d23816f48a511be54f2 = L.marker(
+                [40.535305,-121.565665],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_8820cff85923455db1f6ada137282c12 = L.popup({maxWidth: '300'});
+
+            
+                var html_674a77f068344a43ba76465a04f29c22 = $('<div id="html_674a77f068344a43ba76465a04f29c22" style="width: 100.0%; height: 100.0%;">Manzanita Lake</div>')[0];
+                popup_8820cff85923455db1f6ada137282c12.setContent(html_674a77f068344a43ba76465a04f29c22);
+            
+
+            marker_59fe77c27a1c4d23816f48a511be54f2.bindPopup(popup_8820cff85923455db1f6ada137282c12);
+
+            
+        
+    
+
+            var marker_1152b9e1544b46c3a8848ada5c7dab0a = L.marker(
+                [37.873299,-122.205077],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_d33e3a97e75743de99faeaf9454a81e3 = L.popup({maxWidth: '300'});
+
+            
+                var html_4e9c7d70f7c748cca004c2f71000871f = $('<div id="html_4e9c7d70f7c748cca004c2f71000871f" style="width: 100.0%; height: 100.0%;">Siesta Valley Recreation Area</div>')[0];
+                popup_d33e3a97e75743de99faeaf9454a81e3.setContent(html_4e9c7d70f7c748cca004c2f71000871f);
+            
+
+            marker_1152b9e1544b46c3a8848ada5c7dab0a.bindPopup(popup_d33e3a97e75743de99faeaf9454a81e3);
+
+            
+        
+    
+
+            var marker_cee99170a5c34a3583c5654019839751 = L.marker(
+                [37.898777,-122.579258],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_6f23d89143f74bc0a681fa0f48cf214b = L.popup({maxWidth: '300'});
+
+            
+                var html_85e190e32ae3454d887775a5f96eb3f1 = $('<div id="html_85e190e32ae3454d887775a5f96eb3f1" style="width: 100.0%; height: 100.0%;">Muir Woods National Monument</div>')[0];
+                popup_6f23d89143f74bc0a681fa0f48cf214b.setContent(html_85e190e32ae3454d887775a5f96eb3f1);
+            
+
+            marker_cee99170a5c34a3583c5654019839751.bindPopup(popup_6f23d89143f74bc0a681fa0f48cf214b);
+
+            
+        
+    
+
+            var marker_8451355638534e229c53c051defe48a8 = L.marker(
+                [38.99923,-120.096111],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_43af39d4cdf34447b10518621f50c5d4 = L.popup({maxWidth: '300'});
+
+            
+                var html_a8e31a4301274535bd4d694fb4d5fd25 = $('<div id="html_a8e31a4301274535bd4d694fb4d5fd25" style="width: 100.0%; height: 100.0%;">Dl Bliss Rock</div>')[0];
+                popup_43af39d4cdf34447b10518621f50c5d4.setContent(html_a8e31a4301274535bd4d694fb4d5fd25);
+            
+
+            marker_8451355638534e229c53c051defe48a8.bindPopup(popup_43af39d4cdf34447b10518621f50c5d4);
+
+            
+        
+    
+
+            var marker_3072cb93d5e14b82a0ca9232544d0b6d = L.marker(
+                [37.953611,-122.606],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_f05e90921ee24f76bff9a43fc93259a8 = L.popup({maxWidth: '300'});
+
+            
+                var html_c2ddb7191ab7463ea50ec73a94becdb4 = $('<div id="html_c2ddb7191ab7463ea50ec73a94becdb4" style="width: 100.0%; height: 100.0%;">Bon Tempe Lake</div>')[0];
+                popup_f05e90921ee24f76bff9a43fc93259a8.setContent(html_c2ddb7191ab7463ea50ec73a94becdb4);
+            
+
+            marker_3072cb93d5e14b82a0ca9232544d0b6d.bindPopup(popup_f05e90921ee24f76bff9a43fc93259a8);
+
+            
+        
+    
+
+            var marker_3c41207fa2714bf8a19ed998acab4b5f = L.marker(
+                [37.955281,-122.620827],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_54d050ee4e164ac2b6b592abd2b4c080 = L.popup({maxWidth: '300'});
+
+            
+                var html_af7956af9985442aa75776d9a7fdb287 = $('<div id="html_af7956af9985442aa75776d9a7fdb287" style="width: 100.0%; height: 100.0%;">Alpine Lake</div>')[0];
+                popup_54d050ee4e164ac2b6b592abd2b4c080.setContent(html_af7956af9985442aa75776d9a7fdb287);
+            
+
+            marker_3c41207fa2714bf8a19ed998acab4b5f.bindPopup(popup_54d050ee4e164ac2b6b592abd2b4c080);
+
+            
+        
+    
+
+            var marker_e1f0cdb18087471e8c8949a3f1655bfe = L.marker(
+                [37.441232,-122.357846],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_c93f8b40a9c94998b3528e7947c65135 = L.popup({maxWidth: '300'});
+
+            
+                var html_2271cd4065d74031843959535de5b929 = $('<div id="html_2271cd4065d74031843959535de5b929" style="width: 100.0%; height: 100.0%;">Purisima Creek Redwoods Open Space Preserve</div>')[0];
+                popup_c93f8b40a9c94998b3528e7947c65135.setContent(html_2271cd4065d74031843959535de5b929);
+            
+
+            marker_e1f0cdb18087471e8c8949a3f1655bfe.bindPopup(popup_c93f8b40a9c94998b3528e7947c65135);
+
+            
+        
+    
+
+            var marker_3ac00122705f4207a9421b0c3d3914b2 = L.marker(
+                [38.903415,-120.059082],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_eac9ed828b2147b4aa7f2b4f4daecfb3 = L.popup({maxWidth: '300'});
+
+            
+                var html_ded924708a9e4db2b4dddf7c0a0ecfbc = $('<div id="html_ded924708a9e4db2b4dddf7c0a0ecfbc" style="width: 100.0%; height: 100.0%;">Fallen Leaf</div>')[0];
+                popup_eac9ed828b2147b4aa7f2b4f4daecfb3.setContent(html_ded924708a9e4db2b4dddf7c0a0ecfbc);
+            
+
+            marker_3ac00122705f4207a9421b0c3d3914b2.bindPopup(popup_eac9ed828b2147b4aa7f2b4f4daecfb3);
+
+            
+        
+    
+
+            var marker_166d2e3394814d8985adeb7ab7a0c3fc = L.marker(
+                [37.737385,-122.101458],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_d7277f4d07404147a1a45d95c08e9211 = L.popup({maxWidth: '300'});
+
+            
+                var html_f7f8dee51a5a4594b7bcabfe9a18bdc7 = $('<div id="html_f7f8dee51a5a4594b7bcabfe9a18bdc7" style="width: 100.0%; height: 100.0%;">Lake Chabot Regional Park</div>')[0];
+                popup_d7277f4d07404147a1a45d95c08e9211.setContent(html_f7f8dee51a5a4594b7bcabfe9a18bdc7);
+            
+
+            marker_166d2e3394814d8985adeb7ab7a0c3fc.bindPopup(popup_d7277f4d07404147a1a45d95c08e9211);
+
+            
+        
+    
+
+            var marker_fae800cb2f324f81a75d3fa4982d344d = L.marker(
+                [37.885575,-122.261856],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_ad7a54e3255646559fd40c630291d3b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_ea7d3e8d4e59487680db5ed69511ec15 = $('<div id="html_ea7d3e8d4e59487680db5ed69511ec15" style="width: 100.0%; height: 100.0%;">Codornices Park</div>')[0];
+                popup_ad7a54e3255646559fd40c630291d3b0.setContent(html_ea7d3e8d4e59487680db5ed69511ec15);
+            
+
+            marker_fae800cb2f324f81a75d3fa4982d344d.bindPopup(popup_ad7a54e3255646559fd40c630291d3b0);
+
+            
+        
+    
+
+            var marker_6267fe75e67c42b6ab437262c8e0e0f7 = L.marker(
+                [37.872584,-122.319564],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_4c68e1c91e63468688a09bfdc2812c0a = L.popup({maxWidth: '300'});
+
+            
+                var html_bb6caaf584ab44d4846eaa32bc5bb0ba = $('<div id="html_bb6caaf584ab44d4846eaa32bc5bb0ba" style="width: 100.0%; height: 100.0%;">Cesar Park</div>')[0];
+                popup_4c68e1c91e63468688a09bfdc2812c0a.setContent(html_bb6caaf584ab44d4846eaa32bc5bb0ba);
+            
+
+            marker_6267fe75e67c42b6ab437262c8e0e0f7.bindPopup(popup_4c68e1c91e63468688a09bfdc2812c0a);
+
+            
+        
+    
+
+            var marker_68ab85190fa0417ca295e81efa6a9975 = L.marker(
+                [38.046112,-122.990242],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_68243e230be1494dad907060407fc61c = L.popup({maxWidth: '300'});
+
+            
+                var html_9646cee0a5124322980ad986247b64fd = $('<div id="html_9646cee0a5124322980ad986247b64fd" style="width: 100.0%; height: 100.0%;">Point Reyes South Beach</div>')[0];
+                popup_68243e230be1494dad907060407fc61c.setContent(html_9646cee0a5124322980ad986247b64fd);
+            
+
+            marker_68ab85190fa0417ca295e81efa6a9975.bindPopup(popup_68243e230be1494dad907060407fc61c);
+
+            
+        
+    
+
+            var marker_aecbca1757bc4957a679dddf2071a942 = L.marker(
+                [37.908295,-122.35067],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_462821e14de046f9b12272e481b60240 = L.popup({maxWidth: '300'});
+
+            
+                var html_f46ebb55f5fc4fde8cd749c90f51edf1 = $('<div id="html_f46ebb55f5fc4fde8cd749c90f51edf1" style="width: 100.0%; height: 100.0%;">Barbara and Jay Vincent Park</div>')[0];
+                popup_462821e14de046f9b12272e481b60240.setContent(html_f46ebb55f5fc4fde8cd749c90f51edf1);
+            
+
+            marker_aecbca1757bc4957a679dddf2071a942.bindPopup(popup_462821e14de046f9b12272e481b60240);
+
+            
+        
+    
+
+            var marker_a410af645bfd443899011126cfae82c9 = L.marker(
+                [38.029582,-122.213281],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_1764c86c51e64d829ad00c94c529666b = L.popup({maxWidth: '300'});
+
+            
+                var html_82052cf3a61b488faf518d6684cf7387 = $('<div id="html_82052cf3a61b488faf518d6684cf7387" style="width: 100.0%; height: 100.0%;">Crockett Hills Regional Park</div>')[0];
+                popup_1764c86c51e64d829ad00c94c529666b.setContent(html_82052cf3a61b488faf518d6684cf7387);
+            
+
+            marker_a410af645bfd443899011126cfae82c9.bindPopup(popup_1764c86c51e64d829ad00c94c529666b);
+
+            
+        
+    
+
+            var marker_422b90b544ff4ad9ab090cbb0f8111ee = L.marker(
+                [37.93362,-122.254655],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_14b0b2ae3bfa4eb5b790a6c29de3b61e = L.popup({maxWidth: '300'});
+
+            
+                var html_7db78a5d2f2340cab052645ffe09fae2 = $('<div id="html_7db78a5d2f2340cab052645ffe09fae2" style="width: 100.0%; height: 100.0%;">San Pablo Reservoir</div>')[0];
+                popup_14b0b2ae3bfa4eb5b790a6c29de3b61e.setContent(html_7db78a5d2f2340cab052645ffe09fae2);
+            
+
+            marker_422b90b544ff4ad9ab090cbb0f8111ee.bindPopup(popup_14b0b2ae3bfa4eb5b790a6c29de3b61e);
+
+            
+        
+    
+
+            var marker_5ce4b1c15a62480383252e9e74c31ac2 = L.marker(
+                [37.585543,-122.323253],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_b5670aed32334a3a97229c618b119171 = L.popup({maxWidth: '300'});
+
+            
+                var html_000126434cfe464b85534c388f598391 = $('<div id="html_000126434cfe464b85534c388f598391" style="width: 100.0%; height: 100.0%;">Coyote Point Recreation Area</div>')[0];
+                popup_b5670aed32334a3a97229c618b119171.setContent(html_000126434cfe464b85534c388f598391);
+            
+
+            marker_5ce4b1c15a62480383252e9e74c31ac2.bindPopup(popup_b5670aed32334a3a97229c618b119171);
+
+            
+        
+    
+
+            var marker_9a31e8cef9554b9f9b160023e5201578 = L.marker(
+                [37.865899,-122.235004],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_f86653b498ab407d8513a27cfd742f04 = L.popup({maxWidth: '300'});
+
+            
+                var html_05cb66b380d74744bca8cd0c8ae2707e = $('<div id="html_05cb66b380d74744bca8cd0c8ae2707e" style="width: 100.0%; height: 100.0%;">Claremont Canyon Regional Preserve</div>')[0];
+                popup_f86653b498ab407d8513a27cfd742f04.setContent(html_05cb66b380d74744bca8cd0c8ae2707e);
+            
+
+            marker_9a31e8cef9554b9f9b160023e5201578.bindPopup(popup_f86653b498ab407d8513a27cfd742f04);
+
+            
+        
+    
+
+            var marker_aa00d8168c744c279748fff7011e2088 = L.marker(
+                [38.962329,-120.100497],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_989264e302d543fa92d55414a3027e39 = L.popup({maxWidth: '300'});
+
+            
+                var html_0085461908dd43c298ec10af638ae649 = $('<div id="html_0085461908dd43c298ec10af638ae649" style="width: 100.0%; height: 100.0%;">Emerald Bay</div>')[0];
+                popup_989264e302d543fa92d55414a3027e39.setContent(html_0085461908dd43c298ec10af638ae649);
+            
+
+            marker_aa00d8168c744c279748fff7011e2088.bindPopup(popup_989264e302d543fa92d55414a3027e39);
+
+            
+        
+    
+
+            var marker_bacbd78c522f4987b4cc7fbf47f1a830 = L.marker(
+                [37.826766,-122.422358],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_16563aa4058a44c597c77781da1d5ac5 = L.popup({maxWidth: '300'});
+
+            
+                var html_1c4c5ede222345419ec575f81ae0581e = $('<div id="html_1c4c5ede222345419ec575f81ae0581e" style="width: 100.0%; height: 100.0%;">Alcatraz Island</div>')[0];
+                popup_16563aa4058a44c597c77781da1d5ac5.setContent(html_1c4c5ede222345419ec575f81ae0581e);
+            
+
+            marker_bacbd78c522f4987b4cc7fbf47f1a830.bindPopup(popup_16563aa4058a44c597c77781da1d5ac5);
+
+            
+        
+    
+
+            var marker_1078f7191d47472aa4996326c041ebd8 = L.marker(
+                [37.946575,-122.595793],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_826bf28265b34db28b090a2c58009096 = L.popup({maxWidth: '300'});
+
+            
+                var html_9502b31939374165b101bb76add38b0b = $('<div id="html_9502b31939374165b101bb76add38b0b" style="width: 100.0%; height: 100.0%;">Lake Lagunitas</div>')[0];
+                popup_826bf28265b34db28b090a2c58009096.setContent(html_9502b31939374165b101bb76add38b0b);
+            
+
+            marker_1078f7191d47472aa4996326c041ebd8.bindPopup(popup_826bf28265b34db28b090a2c58009096);
+
+            
+        
+    
+
+            var marker_851d12cc302b41efa1ab394a07bd429d = L.marker(
+                [38.944209,-119.978368],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_38e313e71f84498689e2e83701f78955 = L.popup({maxWidth: '300'});
+
+            
+                var html_f7aabd454258423ab8fcdde1c6930d49 = $('<div id="html_f7aabd454258423ab8fcdde1c6930d49" style="width: 100.0%; height: 100.0%;">South Lake Tahoe</div>')[0];
+                popup_38e313e71f84498689e2e83701f78955.setContent(html_f7aabd454258423ab8fcdde1c6930d49);
+            
+
+            marker_851d12cc302b41efa1ab394a07bd429d.bindPopup(popup_38e313e71f84498689e2e83701f78955);
+
+            
+        
+    
+
+            var marker_0390d60474a64899a8fff6e5232d2872 = L.marker(
+                [38.00458,-122.361961],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_479f5b5ccb2241f0931a27f85b49f9de = L.popup({maxWidth: '300'});
+
+            
+                var html_b36fd365a5d746a0a6e22e575c246d44 = $('<div id="html_b36fd365a5d746a0a6e22e575c246d44" style="width: 100.0%; height: 100.0%;">Point Pinole Regional Shoreline</div>')[0];
+                popup_479f5b5ccb2241f0931a27f85b49f9de.setContent(html_b36fd365a5d746a0a6e22e575c246d44);
+            
+
+            marker_0390d60474a64899a8fff6e5232d2872.bindPopup(popup_479f5b5ccb2241f0931a27f85b49f9de);
+
+            
+        
+    
+
+            var marker_dbe17c2bd8184572933eabe6d2a93c3f = L.marker(
+                [38.06655,-122.808333],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_bbb392cae8784fa186c6fa6c600c28b6 = L.popup({maxWidth: '300'});
+
+            
+                var html_ce34587c6ac4474aa2e2e244b0fddf3f = $('<div id="html_ce34587c6ac4474aa2e2e244b0fddf3f" style="width: 100.0%; height: 100.0%;">Point Reyes Station</div>')[0];
+                popup_bbb392cae8784fa186c6fa6c600c28b6.setContent(html_ce34587c6ac4474aa2e2e244b0fddf3f);
+            
+
+            marker_dbe17c2bd8184572933eabe6d2a93c3f.bindPopup(popup_bbb392cae8784fa186c6fa6c600c28b6);
+
+            
+        
+    
+
+            var marker_9b50e30ad02e41528c0c744f88f9aa6a = L.marker(
+                [37.182784,-122.242713],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9132e5ed94b8443dbb43df8105acaa86);
+            
+    
+            var popup_bf35b3aa338a4233a7784baec3b23ac5 = L.popup({maxWidth: '300'});
+
+            
+                var html_66c3548077844db3a03ebc18fed93711 = $('<div id="html_66c3548077844db3a03ebc18fed93711" style="width: 100.0%; height: 100.0%;">Big Basin Redwoods State Park</div>')[0];
+                popup_bf35b3aa338a4233a7784baec3b23ac5.setContent(html_66c3548077844db3a03ebc18fed93711);
+            
+
+            marker_9b50e30ad02e41528c0c744f88f9aa6a.bindPopup(popup_bf35b3aa338a4233a7784baec3b23ac5);
+
+            
+        
+</script>
